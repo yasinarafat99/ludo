@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./random.css">
+</head>
+<body>
+    <!-- <button onclick="alert('Hello')">show</button> -->
+    <div class="container">
+            
+    <div class="fst">
+        <div class="one">
+            <button onclick="call(6,1)">1</button>
+    
+        <!-- <p id="show"></p> -->
+        </div>
+        <div class="two">
+            <button onclick="call(6,1)">2</button>
+    
+        </div>
+    </div>
+
+
+    <div class="result">
+
+        <strong><p id="show"></p></strong>
+
+    </div>
+    <div class="snd">
+        
+    <div class="three">
+        <button onclick="call(6, 1)">3</button>
+
+    <!-- <p id="show"></p> -->
+    </div>
+
+    <div class="four">
+        <button onclick="call(6, 1)">4</button>
+
+    <!-- <p id="show"></p> -->
+    </div>
+    </div>
+
+    </div>
+
+
+    <script>
+
+        let call = function(bigNumber,smallNumber) {
+            let result = Math.ceil(Math.random() * bigNumber, smallNumber);
+            console.log("hello")
+            // console.log(r)
+            // document.write(result);
+
+            const s = document.getElementById('show')
+            s.innerText= result;
+        }
+        // let a = 6;
+        // let b = 1;
+        // let result = Math.ceil(Math.random() * a, b );
+        // console.log(result);
+
+        const click = function () {
+            
+            // let x = Math.ceil(Math.random() * a);
+            // console.log(x)
+        }
+
+        // const result = click(6, 1)
+        // console.log(result());
+       
+    </script>
+</body>
+</html>
+
